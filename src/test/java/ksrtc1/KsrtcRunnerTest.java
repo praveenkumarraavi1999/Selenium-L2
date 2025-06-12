@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import browser.BrowserLanch;
 import ksrtc.KsRtcFunctionalities;
+import utils.Screenshot;
 
 public class KsrtcRunnerTest {
 	
@@ -29,6 +30,7 @@ public class KsrtcRunnerTest {
 		KsRtcFunctionalities.login("loginxpath");
 		KsRtcFunctionalities.validationAndClickOk("okxpathh");
 		KsRtcFunctionalities.forgottenPassword("forgotpasswordxpath", "okbutt");
+		Screenshot.screenshotFile();
 	}
 	
 //	@AfterTest

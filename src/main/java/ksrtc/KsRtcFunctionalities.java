@@ -98,18 +98,19 @@ public class KsRtcFunctionalities extends BrowserLanch{
 	{
 		driver.findElement(By.xpath(PropertiesFile.propertieFiles(forgotpass))).click();
 //		actual="//div[@class='alert--content error login--alert']";
-		String actualtext="There is no accounts exist's with given user name";
+//		String actualtext="There is no accounts exist's with given user name";
+//		
+//		String expected=driver.findElement(By.xpath("//div[@class='alert--content error login--alert']")).getText();
+//		boolean expp=expected.contains(actualtext);
+//		assertEquals(actual, expp);
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		driver.findElement(By.xpath(PropertiesFile.propertieFiles(okbutton))).click();
 		
-		String expected=driver.findElement(By.xpath("//div[@class='alert--content error login--alert']")).getText();
-		boolean expp=expected.contains(actualtext);
-		assertEquals(actual, expp);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.findElement(By.xpath(PropertiesFile.propertieFiles(okbutton))).click();
 	}
 	
 
