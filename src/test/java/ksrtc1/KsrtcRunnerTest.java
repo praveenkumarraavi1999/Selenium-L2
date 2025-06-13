@@ -15,6 +15,7 @@ public class KsrtcRunnerTest {
 	@BeforeTest
 	public void browserLanch() throws IOException
 	{
+		System.out.print("file running.........");
 		BrowserLanch.browserSetUP("browser4");
 		BrowserLanch.url("url_ksrtc");
 		
